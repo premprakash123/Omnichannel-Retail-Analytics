@@ -1,36 +1,35 @@
-Omnichannel-Retail-Analytics
+# Omnichannel Retail Analytics
 
-Project Overview
+## Project Status
+Week 1 - Data Collection & Cleaning
 
-This project analyzes retail sales data from two channels:
+## Objective
+Combine offline POS and online sales data into one clean dataset for analysis.
 
-- POS (Offline Store Sales)
-- Online Sales
+## Datasets Used
+- pos_sales.csv
+- online_sales.csv
 
-The goal is to clean, combine, and analyze data to generate business insights.
+## Work Completed
+- Loaded datasets
+- Merged datasets
+- Removed null values
+- Removed duplicate rows
+- Converted timestamp to datetime
+- Removed price outliers
+- Exported cleaned dataset
 
-Tools Used
-
+## Tools Used
 - Python
 - Pandas
 - Jupyter Notebook
 - Git
 - GitHub
 
-Work Completed
+## Next Steps
+- SQL analysis
+- KPI creation
+- Dashboard building
 
-- Generated datasets
-- Merged POS and Online datasets
-- Checked missing values
-- Removed rows with null order_id
-
-Upcoming Steps
-
-- Duplicate check
-- Data type cleaning
-- Exploratory Data Analysis
-- Dashboard creation
-
-Author
-
-Premprakash Sahu
+## Author
+Prem Prakash sahu
