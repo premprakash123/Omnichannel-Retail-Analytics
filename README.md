@@ -16,7 +16,7 @@ This project aims to build an end-to-end data analytics pipeline that unifies fr
 - `/sql_scripts`: SQL queries for metric extraction.
 - `/reports`: Final business insights and PDF report.
 
--[x] ## 🧹 Data Cleaning Log (Week 1)
+- [x] ## 🧹 Data Cleaning Log (Week 1)
 To ensure data integrity, the following cleaning steps were performed on the raw datasets:
 
 1. **Data Integration:** Unified `pos_sales.csv` and `online_sales.csv` into a single master dataframe to create an omnichannel view.
