@@ -10,3 +10,6 @@ CREATE TABLE sales (
     month VARCHAR(20),
     year INTEGER
 );
+
+SELECT COUNT(*) FROM sales;
+
