@@ -6,7 +6,6 @@ This project aims to build an end-to-end data analytics pipeline that unifies fr
 ## ✍ Markdown
 Dataset Size: Approximately `20,000` transaction records spanning `offline POS` and `online retail channels`.
 
-
 ## 🛠 Tech Stack
 - **Language:** Python 3.x
 - **Libraries:** Pandas, NumPy (for data cleaning)
