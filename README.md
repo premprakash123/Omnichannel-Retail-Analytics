@@ -3,6 +3,10 @@
 ## 📌 Project Overview
 This project aims to build an end-to-end data analytics pipeline that unifies fragmented data from offline Point of Sale (POS) systems and online storefronts. The goal is to provide actionable business intelligence to optimize inventory turnover and targeted marketing.
 
+## ✍ Markdown
+Dataset Size: Approximately `20,000` transaction records spanning `offline POS` and `online retail channels`.
+
+
 ## 🛠 Tech Stack
 - **Language:** Python 3.x
 - **Libraries:** Pandas, NumPy (for data cleaning)
