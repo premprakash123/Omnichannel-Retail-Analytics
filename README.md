@@ -6,8 +6,8 @@ This project aims to build an end-to-end data analytics pipeline that unifies fr
 ## 🛠 Tech Stack
 - **Language:** Python 3.x
 - **Libraries:** Pandas, NumPy (for data cleaning)
-- **Database:** SQL (MySQL/PostgreSQL)
-- **Visualization:** Power BI / Tableau
+- **Database:** PostgreSQL
+- **Visualization:** Power BI 
 - **Version Control:** Git & GitHub
 
 ## 📂 Project Structure
@@ -30,6 +30,8 @@ To ensure data integrity, the following cleaning steps were performed on the raw
     - Extracted `month` and `year` for seasonality and YoY analysis.
  7. - Exported final cleaned master dataset.
 - [ ] **Week 2: SQL Database Design & Aggregations** (Upcoming ⏳)
+-   [x] During SQL import, duplicate order IDs were detected. Further validation showed conflicting city values for the same order_id,
+       indicating a data consistency issue. Records were reviewd and cleaned before loading. 
 - [ ] **Week 3: Dashboard Architecture & Visualization** (Upcoming ⏳)
 - [ ] **Week 4: Final Insights & Business Reporting** (Upcoming ⏳)
       
