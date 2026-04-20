@@ -13,12 +13,32 @@ CREATE TABLE sales (
 
 SELECT COUNT(*) FROM sales;
 
--- 1. Total Revenue
+-- Total Revenue
 SELECT SUM(sales) AS total_revenue FROM sales;
 
--- 2. Total Order Volume
+-- Total Order Volume
 SELECT COUNT(order_id) AS total_orders FROM sales;
 
--- 3. Average Order Value (AOV)
+-- Average Order Value (AOV)
 SELECT ROUND(SUM(sales) / COUNT(order_id), 2) AS average_order_value FROM sales;
+
+-- 1. Best Selling Products (By Volume)
+SELECT product, SUM(quantity) as total_qty 
+FROM sales 
+GROUP BY product 
+ORDER BY total_qty DESC LIMIT 5;
+
+-- 2. Geographic Performance
+SELECT city, SUM(sales) as city_revenue 
+FROM sales 
+GROUP BY city 
+ORDER BY city_revenue DESC;
+
+-- 3. Peak Hour Analysis 
+SELECT EXTRACT(HOUR FROM timestamp) as shopping_hour, COUNT(*) as order_count 
+FROM sales 
+GROUP BY shopping_hour 
+ORDER BY order_count DESC;
+
+
 
