@@ -32,7 +32,7 @@ To ensure data integrity, the following cleaning steps were performed on the raw
     - Engineered `sales` column (`quantity * price`).
     - Extracted `month` and `year` for seasonality and YoY analysis.
  7. - Exported final cleaned master dataset.
-- [x] **Week 2: SQL Database Design & Aggregations** (Upcoming ⏳)
+- [x] **Week 2: SQL Database Design & Aggregations** 
       - During SQL import, duplicate `order_id` were detected.
       - Further validation showed conflicting city values for the same order_id,indicating a data consistency issue.
       - Records were reviewd  and cleaned before loading.
