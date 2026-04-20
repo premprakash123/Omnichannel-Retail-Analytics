@@ -33,8 +33,9 @@ To ensure data integrity, the following cleaning steps were performed on the raw
     - Extracted `month` and `year` for seasonality and YoY analysis.
  7. - Exported final cleaned master dataset.
 - [x] **Week 2: SQL Database Design & Aggregations** (Upcoming ⏳)
--      During SQL import, duplicate order IDs were detected. Further validation showed conflicting city values for the same order_id,
-       indicating a data consistency issue. Records were reviewd and cleaned before loading.
+      - During SQL import, duplicate `order_id` were detected.
+      - Further validation showed conflicting city values for the same order_id,indicating a data consistency issue.
+      - Records were reviewd  and cleaned before loading.
  ##✍ Markdown
 - [x] 📊 Dataset & Insights: Final cleaned dataset contains `18,957rows` and `9 columns`. SQL analysis was performed to calculate revenue, orders, AOV, city-wise  performance, and peak shopping hours.
     
