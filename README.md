@@ -37,9 +37,10 @@ To ensure data integrity, the following cleaning steps were performed on the raw
     - [x] Designed relational schema in PostgreSQL.
     - [x] Migrated 20k+ rows using pgAdmin Import Tool.
     - [x] Developed aggregation queries for Revenue, AOV, and Order Volume.
-    - [x] Conducted deep-dive analysis using EXTRACT functions for peak hour trends.     
- ##✍ Markdown
-- [x] 📊 Dataset & Insights: Final cleaned dataset contains `18,957rows` and `9 columns`. SQL analysis was performed to calculate revenue, orders, AOV, city-wise  performance, and peak shopping hours.
+    - [x] Conducted deep-dive analysis using EXTRACT functions for peak hour trends.
+    
+##✍ Markdown -
+- [x] 📊 Dataset & Insights: Final cleaned dataset contains `18,957rows` and `9 columns`. SQL analysis was performed to calculate   revenue, orders, AOV, city-wise  performance, and peak shopping hours.
     
 - [ ] **Week 3: Dashboard Architecture & Visualization** (Upcoming ⏳)
 - [ ] **Week 4: Final Insights & Business Reporting** (Upcoming ⏳)
