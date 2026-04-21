@@ -32,10 +32,12 @@ To ensure data integrity, the following cleaning steps were performed on the raw
     - Engineered `sales` column (`quantity * price`).
     - Extracted `month` and `year` for seasonality and YoY analysis.
  7. - Exported final cleaned master dataset.
-- [x] **Week 2: SQL Database Design & Aggregations** 
-      - During SQL import, duplicate `order_id` were detected.
-      - Further validation showed conflicting city values for the same order_id,indicating a data consistency issue.
-      - Records were reviewd  and cleaned before loading.
+      
+ - [x] **Week 2: SQL Database Design & Aggregations** (Completed ✅)
+    - [x] Designed relational schema in PostgreSQL.
+    - [x] Migrated 20k+ rows using pgAdmin Import Tool.
+    - [x] Developed aggregation queries for Revenue, AOV, and Order Volume.
+    - [x] Conducted deep-dive analysis using EXTRACT functions for peak hour trends.     
  ##✍ Markdown
 - [x] 📊 Dataset & Insights: Final cleaned dataset contains `18,957rows` and `9 columns`. SQL analysis was performed to calculate revenue, orders, AOV, city-wise  performance, and peak shopping hours.
     
