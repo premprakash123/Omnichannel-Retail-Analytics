@@ -1,0 +1,28 @@
+# Measure: Total Revenue
+# Calculates total sales revenue
+Total Revenue = SUM('public sales'[sales])
+
+# Measure: Total Orders
+# Counts total number of orders
+Total Orders = COUNT('public sales'[order_id])
+
+# Measure: Average Order Value (AOV)
+# Revenue divided by total orders
+AOV = DIVIDE([Total Revenue], [Total Orders], 0)
+
+# Measure: Revenue Previous Month
+# Returns previous month's revenue using DateTable
+Revenue Prev Month =
+CALCULATE(
+    [Total Revenue],
+    DATEADD(DateTable[Date], -1, MONTH)
+)
+
+# Measure: Revenue Month-over-Month %
+# Compares current month vs previous month
+Revenue MoM % =
+DIVIDE(
+    [Total Revenue] - [Revenue Prev Month],
+    [Revenue Prev Month],
+    0
+)
