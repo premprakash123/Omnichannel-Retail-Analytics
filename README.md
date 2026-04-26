@@ -42,7 +42,15 @@ To ensure data integrity, the following cleaning steps were performed on the raw
 ##✍ Markdown -
 - [x] 📊 Dataset & Insights: Final cleaned dataset contains `18,957rows` and `9 columns`. SQL analysis was performed to calculate   revenue, orders, AOV, city-wise  performance, and peak shopping hours.
     
-- [ ] **Week 3: Dashboard Architecture & Visualization** (Upcoming ⏳)
+- [x] **Week 3: Dashboard Architecture & Visualization** (Completed ✅)
+    - [x] Established live connection between Power BI and PostgreSQL.
+    - [x] Developed custom DAX measures for AOV and MoM Revenue Growth.
+    - [x] Designed 3-page interactive dashboard for Director, Manager, and Planner personas.
+    - [x] Implemented a temporal heatmap for peak hour analysis and YoY seasonality charts.
+
+##✍ Markdown -
+- [x] Finalized dashboard UX, synced slicers, theme updates, and documentation
+    
 - [ ] **Week 4: Final Insights & Business Reporting** (Upcoming ⏳)
       
       
