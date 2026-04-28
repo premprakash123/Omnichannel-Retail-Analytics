@@ -84,6 +84,40 @@ Implementing the recommended actions can help convert these insights into measur
 
 ---
 
+# 🚀 Day 2: Strategy Phase – Actionable Recommendations
+
+## 🎯 Goal
+Convert dashboard insights into growth actions using:  
+**Observation → Insight → Action**
+
+---
+
+| 📌 Observation | 💡 Insight | 🚀 Recommended Action |
+|---|---|---|
+| Q4 contributes **32%–35%** of yearly revenue | Festive season drives high demand | Launch **Early Bird Campaigns** in October and secure stock early |
+| Electronics contributes **68%–70%** of revenue | Main revenue engine of the business | Expand electronics range and cross-sell accessories |
+| Bengaluru has highest growth (**8% MoM**) | Fastest growing market | Increase ads, stock, and delivery focus in Bengaluru |
+| Chennai has lowest AOV (**₹431**) | Lower basket value orders | Use combo deals, upselling, and free-shipping thresholds |
+| Hyderabad has highest AOV (**₹475**) | Customers spend more per order | Launch premium bundles and loyalty rewards |
+| Delhi generates **₹1.26M** revenue | Strong and stable market | Maintain campaigns and test new launches here |
+| Orders are balanced across cities | Demand exists everywhere | Use city-wise pricing and localized offers |
+| Home Decor is #2 category | Good add-on purchase behavior | Bundle Home Decor with Electronics |
+| Beauty contributes **7%–9%** | Repeat-purchase category | Run refill offers and subscription discounts |
+| Overall business growth is **+6% MoM** | Healthy upward trend | Reinvest into marketing and retention programs |
+
+---
+
+# ✅ Final Strategy Focus
+
+- Grow Electronics sales further  
+- Increase AOV in Chennai  
+- Scale Bengaluru aggressively  
+- Monetize Hyderabad premium buyers  
+- Use localized city strategies  
+- Prepare early for Q4 demand spike  
+
+---
+
 **End of Key Findings Section**  
 *Data Source: Power BI Sales Dashboard*  
 *Note: Insights are derived from exported data and trend analysis.*
