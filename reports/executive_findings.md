@@ -84,14 +84,6 @@ Implementing the recommended actions can help convert these insights into measur
 
 ---
 
-# 🚀 Day 2: Strategy Phase – Actionable Recommendations
-
-## 🎯 Goal
-Convert dashboard insights into growth actions using:  
-**Observation → Insight → Action**
-
----
-
 | 📌 Observation | 💡 Insight | 🚀 Recommended Action |
 |---|---|---|
 | Q4 contributes **32%–35%** of yearly revenue | Festive season drives high demand | Launch **Early Bird Campaigns** in October and secure stock early |
