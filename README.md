@@ -50,7 +50,8 @@ To ensure data integrity, the following cleaning steps were performed on the raw
 
 ##✍ Markdown -
 - [x] Finalized dashboard UX, synced slicers, theme updates, and documentation
-    
+- [x] Raw CSV files are stored locally and excluded from Github via .gitignore for repository hygiene.
+   
 - [ ] **Week 4: Final Insights & Business Reporting** (Upcoming ⏳)
       
       
