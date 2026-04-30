@@ -1,16 +1,14 @@
 # Omnichannel Retail Sales and Inventory Analytics Dashboard
 
-# 🛒 Omnichannel Retail Sales & Inventory Analytics
-
 ## 📊 Dashboard Preview
 
-### Page 1 – Executive Overview
+### Page 1 – Executive Summary Dashboard
 ![Page1](./dashboard_docs/page1.png)
 
-### Page 2 – Product & Sales Analysis
+### Page 2 – Sales Trend & Time Analysis
 ![Page2](./dashboard_docs/page2.png)
 
-### Page 3 – Time & Order Analysis
+### Page 3 – Product Performance & Order Insights
 ![Page3](./dashboard_docs/page3.png)
 
 ---
@@ -43,10 +41,11 @@ Without these insights, businesses struggle to optimize pricing, marketing, and 
 This project follows a structured analytics pipeline:
 
 ### 🔹 1. Data Processing (Python)
-- Cleaned raw CSV data  
-- Removed duplicates & handled missing values  
-- Standardized columns  
-
+- Cleaned raw CSV data
+- Removed duplicates & handled missing values
+- Standardized columns
+- Integrated multiple data sources (online_sales.csv & pos_sales.csv) to create a consolidated omnichannel dataset
+  
 ### 🔹 2. Data Storage (PostgreSQL)
 - Stored cleaned data in relational tables  
 - Enabled efficient querying using SQL  
@@ -99,6 +98,44 @@ The Power BI dashboard provides:
 | Low AOV in Chennai | Smaller purchase size | Implement free shipping threshold |
 
 ---
+
+## ⚙️ Setup Instructions
+
+To run this project locally:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/premprakash123/Omnichannel-Retail-Analytics.git
+cd Omnichannel-Retail-Analytics
+
+-2. Run Data Processing (Python)
+Open notebooks folder
+Run:
+01_data_generation.ipynb
+02_data_cleaning.ipynb
+👉 This will generate the cleaned dataset (omnichannel_fixed.csv)
+
+### 3. Load Data into PostgreSQL
+- Create a PostgreSQL database (e.g., `retail_db`)
+- Import the cleaned CSV (`omnichannel_fixed.csv`)
+- Use pgAdmin or psql to load the data
+
+---
+
+### 4. Connect Power BI to PostgreSQL
+- Open Power BI Desktop
+- Click **Get Data → PostgreSQL**
+- Enter:
+  - Server: localhost
+  - Database: retail_db
+
+---
+
+### 5. Open Dashboard
+- Open the `.pbix` file
+- Click **Refresh**
+
+👉 Dashboard will load with processed data
 
 ## 📁 Project Structure
          
