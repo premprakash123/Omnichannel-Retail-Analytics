@@ -110,11 +110,10 @@ cd Omnichannel-Retail-Analytics
 ```
 
 ### 2. Run Data Processing (Python)
-Open notebooks folder
-Run:
-- **01_data_generation.ipynb**
-- **02_data_cleaning.ipynb**
-- **This will generate the cleaned dataset (omnichannel_fixed.csv)**
+👉 This will generate the cleaned dataset (omnichannel_fixed.csv)
+
+⚠️ Note: Raw data files are not stored in the repository. 
+The dataset is generated dynamically using the notebooks.
 
 ### 3. Load Data into PostgreSQL
 - Create a PostgreSQL database (e.g., `retail_db`)
@@ -138,5 +137,10 @@ Run:
 
 👉 Dashboard will load with processed data
 
+---
+## 📄 Final Business Report
 
+This report summarizes key insights, trends, and business recommendations derived from the analysis.
+
+👉 **[Click here to view the full report](./reports/Omnichannel_Retail_Analytics_Report.pdf)**
          
