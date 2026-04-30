@@ -107,13 +107,14 @@ To run this project locally:
 ```bash
 git clone https://github.com/premprakash123/Omnichannel-Retail-Analytics.git
 cd Omnichannel-Retail-Analytics
+```
 
--2. Run Data Processing (Python)
+### 2. Run Data Processing (Python)
 Open notebooks folder
 Run:
-01_data_generation.ipynb
-02_data_cleaning.ipynb
-👉 This will generate the cleaned dataset (omnichannel_fixed.csv)
+- **01_data_generation.ipynb**
+- **02_data_cleaning.ipynb**
+- **This will generate the cleaned dataset (omnichannel_fixed.csv)**
 
 ### 3. Load Data into PostgreSQL
 - Create a PostgreSQL database (e.g., `retail_db`)
@@ -137,5 +138,5 @@ Run:
 
 👉 Dashboard will load with processed data
 
-## 📁 Project Structure
+
          
