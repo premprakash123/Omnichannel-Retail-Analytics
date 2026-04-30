@@ -1,58 +1,104 @@
 # Omnichannel Retail Sales and Inventory Analytics Dashboard
 
+# 🛒 Omnichannel Retail Sales & Inventory Analytics
+
+## 📊 Dashboard Preview
+
+### Page 1 – Executive Overview
+![Page1](./dashboard_docs/page1.png)
+
+### Page 2 – Product & Sales Analysis
+![Page2](./dashboard_docs/page2.png)
+
+### Page 3 – Time & Order Analysis
+![Page3](./dashboard_docs/page3.png)
+
+---
+
 ## 📌 Project Overview
-This project aims to build an end-to-end data analytics pipeline that unifies fragmented data from offline Point of Sale (POS) systems and online storefronts. The goal is to provide actionable business intelligence to optimize inventory turnover and targeted marketing.
 
-## ✍ Markdown
-Dataset Size: Approximately `20,000` transaction records spanning `offline POS` and `online retail channels`.
+This project analyzes omnichannel retail sales data to uncover business insights across multiple dimensions such as time, product category, and geography.  
 
-## 🛠 Tech Stack
-- **Language:** Python 3.x
-- **Libraries:** Pandas, NumPy (for data cleaning)
-- **Database:** PostgreSQL
-- **Visualization:** Power BI 
-- **Version Control:** Git & GitHub
+The objective is to help decision-makers:
+- Understand revenue drivers  
+- Identify customer buying patterns  
+- Optimize sales strategy  
 
-## 📂 Project Structure
-- `/data`: Raw and cleaned datasets.
-- `/notebooks`: Jupyter notebooks for data cleaning and EDA.
-- `/sql_scripts`: SQL queries for metric extraction.
-- `/reports`: Final business insights and PDF report.
+---
 
-- [x] ## 🧹 Data Cleaning Log (Week 1)-
-To ensure data integrity, the following cleaning steps were performed on the raw datasets:
+## ❗ Business Problem
 
-1. **Data Integration:** Unified `pos_sales.csv` and `online_sales.csv` into a single master dataframe to create an omnichannel view.
-2. **Handling Missing Values:** Identified NULL values in the `order_id` column and removed them as they were critical for transaction tracking.
-3. **Duplicate Removal:** Detected and removed duplicate records to prevent the overestimation of total revenue.
-4. **Temporal Standardization:** Converted `timestamp` strings into `datetime` objects to enable time-series analysis.
-5. **Outlier Treatment:** Identified extreme price outliers (e.g., $99,999) using distribution analysis and removed them to prevent skewing the Average Order Value (AOV).
-6. - **Transformations:** 
-    - Converted `timestamp` to datetime objects.
-    - Engineered `sales` column (`quantity * price`).
-    - Extracted `month` and `year` for seasonality and YoY analysis.
- 7. - Exported final cleaned master dataset.
-      
- - [x] **Week 2: SQL Database Design & Aggregations** (Completed ✅)
-    - [x] Designed relational schema in PostgreSQL.
-    - [x] Migrated 20k+ rows using pgAdmin Import Tool.
-    - [x] Developed aggregation queries for Revenue, AOV, and Order Volume.
-    - [x] Conducted deep-dive analysis using EXTRACT functions for peak hour trends.
-    
-##✍ Markdown -
-- [x] 📊 Dataset & Insights: Final cleaned dataset contains `18,957rows` and `9 columns`. SQL analysis was performed to calculate   revenue, orders, AOV, city-wise  performance, and peak shopping hours.
-    
-- [x] **Week 3: Dashboard Architecture & Visualization** (Completed ✅)
-    - [x] Established live connection between Power BI and PostgreSQL.
-    - [x] Developed custom DAX measures for AOV and MoM Revenue Growth.
-    - [x] Designed 3-page interactive dashboard for Director, Manager, and Planner personas.
-    - [x] Implemented a temporal heatmap for peak hour analysis and YoY seasonality charts.
+Retail companies often lack visibility into:
+- Which products contribute the most to revenue  
+- When customers are most active  
+- Which regions underperform  
+- How order value varies across cities  
 
-##✍ Markdown -
-- [x] Finalized dashboard UX, synced slicers, theme updates, and documentation
-- [x] Raw CSV files are stored locally and excluded from Github via .gitignore for repository hygiene.
-   
-- [ ] **Week 4: Final Insights & Business Reporting** (Upcoming ⏳)
-      
-      
+Without these insights, businesses struggle to optimize pricing, marketing, and inventory strategies.
+
+---
+
+## ⚙️ End-to-End Data Pipeline
+
+This project follows a structured analytics pipeline:
+
+### 🔹 1. Data Processing (Python)
+- Cleaned raw CSV data  
+- Removed duplicates & handled missing values  
+- Standardized columns  
+
+### 🔹 2. Data Storage (PostgreSQL)
+- Stored cleaned data in relational tables  
+- Enabled efficient querying using SQL  
+
+### 🔹 3. Data Visualization (Power BI)
+- Built interactive dashboards  
+- Created DAX measures for KPIs:
+  - Total Revenue  
+  - Total Orders  
+  - AOV (Average Order Value)  
+  - MoM Growth  
+
+---
+
+## 📊 Dashboard Highlights
+
+The Power BI dashboard provides:
+
+- 📈 Revenue trends over time (monthly analysis)  
+- 🛍️ Product category performance  
+- 🌍 City-wise revenue distribution  
+- ⏰ Peak order hour analysis  
+- 📦 KPI summary cards  
+
+---
+
+## 🔍 Key Business Insights
+
+- 📊 **Strong seasonal trend observed**  
+  → Revenue peaks during Q4 (Nov–Dec), indicating holiday demand  
+
+- 🛒 **Electronics is the top-performing category**  
+  → Contributes the largest share of total revenue  
+
+- ⏰ **Customer activity peaks in evening hours (6–9 PM)**  
+  → Indicates post-work shopping behavior  
+
+- 📉 **Chennai shows the lowest AOV**  
+  → Customers are purchasing lower-value items  
+
+---
+
+## 🚀 Actionable Recommendations
+
+| Observation | Insight | Recommendation |
+|------------|--------|----------------|
+| High Q4 sales | Seasonal demand spike | Launch early marketing campaigns in October |
+| Peak evening orders | Customers shop after work | Optimize server & logistics capacity |
+| Electronics dominates revenue | High-value products drive growth | Introduce bundle offers & cross-selling |
+| Low AOV in Chennai | Smaller purchase size | Implement free shipping threshold |
+
+---
+
+## 📁 Project Structure
          
